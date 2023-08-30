@@ -9,8 +9,8 @@ export class EmailService {
   async sendEmail(contactFromDto: ContactFromDto): Promise<void> {
     try {
       await this.mailerService.sendMail({
-        to: contactFromDto.email,
-        from: 'pallagijoe@gmail.com.com',
+        to: 'pallagijoe@gmail.com.com',
+        from: contactFromDto.email,
         subject: contactFromDto.subject,
         text: `${contactFromDto.message} from: ${contactFromDto.firstName} ${contactFromDto.lastName} phone: ${contactFromDto.phoneNumber} email: ${contactFromDto.email}`,
       });
