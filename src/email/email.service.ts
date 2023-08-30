@@ -7,6 +7,10 @@ export class EmailService {
   constructor(private mailerService: MailerService) {}
 
   async sendEmail(contactFromDto: ContactFromDto): Promise<void> {
+    console.log(
+      '🚀 ~ file: email.service.ts:10 ~ EmailService ~ sendEmail ~ contactFromDto:',
+      contactFromDto,
+    );
     try {
       await this.mailerService.sendMail({
         to: 'pallagijoe@gmail.com',
