@@ -12,7 +12,7 @@ export class EmailService {
         to: contactFromDto.email,
         from: 'pallagijoe@gmail.com.com',
         subject: contactFromDto.subject,
-        text: `${contactFromDto.message} from: ${contactFromDto.firstName} ${contactFromDto.lastName} phone: ${contactFromDto.phone} email: ${contactFromDto.email}`,
+        text: `${contactFromDto.message} from: ${contactFromDto.firstName} ${contactFromDto.lastName} phone: ${contactFromDto.phoneNumber} email: ${contactFromDto.email}`,
       });
     } catch (error) {
       throw new InternalServerErrorException(error, "Couldn't send email");
