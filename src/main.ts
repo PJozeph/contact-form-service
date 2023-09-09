@@ -7,7 +7,7 @@ async function bootstrap() {
     origin: [
       'http://localhost:4200',
       'http://localhost:8100',
-      'https://contact-form-client-ionic.web.app/',
+      'https://contact-form-client-ionic.web.app',
       'https://contact-form-client.web.app',
     ],
     methods: ['GET', 'POST', 'DELETE', 'PATCH'],
