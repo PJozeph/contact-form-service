@@ -18,7 +18,7 @@ export class EmailService {
       await this.mailerService.sendMail({
         to: contactFromDto.email,
         from: 'pallagijoe@gmail.com',
-        subject: contactFromDto.subject,
+        subject: 'Jozsef Pallagi Freelancer - Contact Form',
         text: ` Dear ${contactFromDto.firstName} ,Thank you for contacting me. I will get back to you as soon as possible.`,
       });
     } catch (error) {
