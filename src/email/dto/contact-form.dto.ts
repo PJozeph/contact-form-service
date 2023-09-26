@@ -3,6 +3,5 @@ export interface ContactFromDto {
   lastName: string;
   email: string;
   message: string;
-  subject: string;
   phoneNumber: string;
 }
