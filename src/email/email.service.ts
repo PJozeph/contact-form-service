@@ -19,7 +19,7 @@ export class EmailService {
         to: contactFromDto.email,
         from: 'pallagijoe@gmail.com',
         subject: 'Code Code Academy - Contact Form',
-        text: ` Kedves ${contactFromDto.firstName} ,Köszönöm hogy kapcsolatba lépett velünk. Amint lehetséges, visszajelzünk !`,
+        text: ` Kedves ${contactFromDto.firstName} , köszönjük a jelentkezését. Hamarosan, felvesszük Önnel a kapcsolatot !`,
       });
     } catch (error) {
       throw new InternalServerErrorException(error, "Couldn't send email");
