@@ -4,4 +4,5 @@ export interface ContactFromDto {
   email: string;
   message: string;
   phoneNumber: string;
+  subject: string;
 }

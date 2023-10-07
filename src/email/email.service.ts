@@ -11,15 +11,15 @@ export class EmailService {
       await this.mailerService.sendMail({
         to: 'pallagijoe@gmail.com',
         from: 'pallagijoe@gmail.com',
-        subject: 'Devlux - Contact Form',
-        text: `${contactFromDto.message} from: ${contactFromDto.firstName} ${contactFromDto.lastName} phone: ${contactFromDto.phoneNumber} email: ${contactFromDto.email}`,
+        subject: 'Code Code Academy - Contact Form',
+        text: `${contactFromDto.message} from: ${contactFromDto.firstName} ${contactFromDto.lastName} phone: ${contactFromDto.phoneNumber} email: ${contactFromDto.email} subject: ${contactFromDto.subject}  `,
       });
 
       await this.mailerService.sendMail({
         to: contactFromDto.email,
         from: 'pallagijoe@gmail.com',
-        subject: 'Devlux - Contact Form',
-        text: ` Dear ${contactFromDto.firstName} ,Thank you for contacting me. I will get back to you as soon as possible.`,
+        subject: 'Code Code Academy - Contact Form',
+        text: ` Kedves ${contactFromDto.firstName} ,Köszönöm hogy kapcsolatba lépett velünk. Amint lehetséges, visszajelzünk !`,
       });
     } catch (error) {
       throw new InternalServerErrorException(error, "Couldn't send email");
